@@ -1,0 +1,223 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #E6F7FF; /* light sky blue */
+  color: black;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #D0F0FF;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #87CEFA;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: -75px;
+  border: 5px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #87CEFA;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+#about p1 {
+  font-size: 1.1rem;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Skills */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 1rem;
+}
+
+#skills ul li {
+  background-color: #B0E0E6;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Projects */
+.project-card {
+  background-color: #F0FFFF;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.project-card p {
+  color: #444;
+}
+
+/* Contact */
+#contact p, #contact a {
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #0000EE;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #D0F0FF;
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  margin-top: 2rem;
+}
+#skills ul li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #B0E0E6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#skills ul li a:hover {
+  background-color: #87CEFA;
+  color: white;
+}
+/* Remove list dots and style skill tags */
+.skill-tags,
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-tags span,
+.project-tags span,
+.project-tags a {
+  background-color: #B0E0E6; /* light blue */
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-tags a:hover,
+.skill-tags span:hover,
+.project-tags span:hover {
+  background-color: #87CEFA;
+  color: white;
+}
+
